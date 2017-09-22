@@ -1,30 +1,4 @@
 <?php
-
-/*
-	$weather ="";
-	$error ="";
-
-	if ($_GET['city']) {
-		$urlContents = file_get_contents("http://samples.openweathermap.org/data/2.5/weather?id=".urlencode($_GET['city']).",uk&appid=b26147d35142a428f2f73c1157c3de0a");
-		
-		$weatherArray = json_decode($urlContents, true);
-		
-		if($weatherArray) {
-			
-			$weather = "The weather in ".$_GET['city']." is currently ".$weatherArray['weather'][0]['description'].". ";
-			$tempinCelcius = intval($weatherArray['main']['temp']-273);			
-			$weather .= " The temperature is ".$tempinCelcius."&deg;C and the windspeed is ".$weatherArray['wind']['speed']."m/s.";
-		 } else {
-            
-            $error = "Could not find city - please try again.";
-            
-        }
-    }
-*/
-
-	
-?>
-<?php
 	$userInput=ucwords($_GET["city"]);
 	$error="The city could not be found.<br>Please try again!";
 	if($_GET['city']){
