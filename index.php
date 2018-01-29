@@ -2,7 +2,7 @@
 	$userInput=ucwords($_GET["city"]);
 	$error="The city could not be found.<br>Please try again!";
 	if($_GET['city']){
-		$key ='9775419d35d04bb1acf130335170208';
+		$key ='string';
 		$cityName = str_replace(' ', '-', $_GET['city']);
 		$url="http://api.apixu.com/v1/current.json?key=$key&q=$cityName";
 
